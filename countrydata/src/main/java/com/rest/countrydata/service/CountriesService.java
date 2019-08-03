@@ -5,6 +5,9 @@ import com.rest.countrydata.persistence.models.country.CountryEntity;
 
 import java.util.List;
 
+/**
+ * Service for countries only services. Can be used independently
+ */
 public interface CountriesService {
     public List getCountries(List<String> countryCodeList, boolean isPersist);
 

@@ -10,9 +10,7 @@ import org.springframework.web.client.ResponseErrorHandler;
 
 import java.io.IOException;
 
-/**
- * Created by moksha on 03/07/2016.
- */
+
 public class OWMResponseErrorHandler implements ResponseErrorHandler {
     private static final Logger logger = LoggerFactory.getLogger(OWMResponseErrorHandler.class);
 
