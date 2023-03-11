@@ -1,6 +1,7 @@
 package com.rest.countrydata.config;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -19,8 +20,9 @@ import java.util.Properties;
 @Configuration
 @Component
 @EnableTransactionManagement
-@ComponentScan({"com.rest.countrydata.config"})
+@ComponentScan({"com.rest.countrydata.*"})
 @EnableJpaRepositories(basePackages = "com.rest.countrydata.persistence")
+@EntityScan("com.rest.countrydata.persistence.models.*")
 public class PersistenceConfig {
 
     private final String DIALECT = "hibernate.dialect";

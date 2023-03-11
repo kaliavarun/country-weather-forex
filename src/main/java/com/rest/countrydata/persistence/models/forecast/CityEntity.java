@@ -2,12 +2,13 @@
 package com.rest.countrydata.persistence.models.forecast;
 
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
-@Entity
+
 /**
  * CityEntity for which data is to be retrieved
  */
+@Entity
 public class CityEntity {
 
     @Id

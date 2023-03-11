@@ -3,7 +3,7 @@ package com.rest.countrydata.persistence.models.forex;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.List;
 
 @Entity

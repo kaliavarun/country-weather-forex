@@ -4,6 +4,7 @@ package com.rest.countrydata.handler;
 import com.rest.countrydata.exception.ResponseException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.web.client.DefaultResponseErrorHandler;
 import org.springframework.web.client.ResponseErrorHandler;
@@ -22,7 +23,8 @@ public class OWMResponseErrorHandler implements ResponseErrorHandler {
 
     public void handleError(ClientHttpResponse response) throws IOException {
         logger.error("Response error: {} {}", response.getStatusCode(), response.getStatusText());
-        ResponseException exception = new ResponseException(response.getStatusCode(), response.getStatusText());
+        ResponseException exception = new ResponseException(HttpStatus.valueOf(response.getStatusCode().toString()),
+                response.getStatusText());
         throw exception;
     }
 }

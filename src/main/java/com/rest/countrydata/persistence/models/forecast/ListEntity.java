@@ -3,7 +3,7 @@ package com.rest.countrydata.persistence.models.forecast;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 public class ListEntity {

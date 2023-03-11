@@ -10,8 +10,9 @@ import com.rest.countrydata.service.ForexService;
 import com.rest.countrydata.service.ReportService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.transaction.Transactional;
+
 import java.util.*;
 
 @Service

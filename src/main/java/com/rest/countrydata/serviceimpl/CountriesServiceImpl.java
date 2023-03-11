@@ -19,10 +19,11 @@ import org.springframework.http.MediaType;
 import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriTemplate;
 
-import javax.transaction.Transactional;
+
 import java.io.IOException;
 import java.net.URI;
 import java.util.ArrayList;

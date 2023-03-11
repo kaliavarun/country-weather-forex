@@ -1,7 +1,7 @@
 package com.rest.countrydata.persistence.models.forex;
 
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 public class RatesEntity {
